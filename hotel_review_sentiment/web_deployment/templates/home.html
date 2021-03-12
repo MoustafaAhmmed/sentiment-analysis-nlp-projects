@@ -1,0 +1,54 @@
+<html>
+<style>
+body {
+  background-image: 'static\hotel_bc.jpg';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1 {
+color:#4D5656;
+font-family: arial, sans-serif;
+font-size: 100px;
+font-weight: bold;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+input[type=text], select {
+  width: 75%;
+  padding: 20px 50px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #A569BD;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 10%;
+  margin: 4px 15px;
+  cursor: pointer;
+}
+
+
+</style>
+    <body text=#041574 background='static\hotel_bc.jpg' >
+
+        <center>
+
+        <h1> Hotel reviews sentiment </h1><br>
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b>
+            <input type="text", name='a', placeholder=" Enter ur Review (arabic language) "> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+
+        </center>
+        <div class="container-contact100">
+    </body>
+</html>

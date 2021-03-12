@@ -1,0 +1,48 @@
+<html>
+<style>
+body {
+  background-image: 'static\hotel1.jpg';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    h1 {
+color:#4D5656;
+font-family: arial, sans-serif;
+font-size: 100px;
+font-weight: bold;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+</style>
+ <body background='static\hotel1.jpg' >
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+
+
+    {% if data == -1 %}
+    <h1>Negative Review</h1>
+    <img src='static\-1.jpg'>
+
+    {% elif data == 0 %}
+    <h1>Mixed Review</h1>
+    <img src='static\0.jpg'>
+
+
+    {% else %}
+    <h1>Positive Review</h1>
+    <img src='static\1.jpg'>
+
+    {% endif %}
+    
+        <br><br>
+    <a href='/'>Try again </a>
+
+    </center>
+
+ </body>
+
+</html>
